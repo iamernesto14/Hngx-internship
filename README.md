@@ -3,6 +3,10 @@
 ## Project Description
 Welcome to my personal web page! This project showcases my skills as a Frontend Developer and provides real-time information about my Slack username, the current day of the week, and the current UTC time.
 
+
+## Project Preview
+Demo link: [live](https://courageous-ernest.netlify.app/). Enjoy exploring!
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
