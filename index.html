@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="current_date">
+                <div class="current_week">
+                    <span>Happy,</span>
+                    <span data-testid="currentDayOfTheWeek"></span>
+                </div>
+                <p data-testid="currentUTCTime"></p>
+            </div>
+            <nav>
+                <div class="nav-icons">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#work">home</a>
+                    </li>
+                    <li>
+                        <a href="#">say hello</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                </ul>
+                <div id="logo">
+                    <a href="#main">
+                        <i class="fi fi-brands-astrazeneca"></i>
+                    </a>
+                </div>
+                <!-- social icons -->
+                <div class="social">
+                    <a href="https://github.com/iamernesto14">
+                        <i class="fa-brands fa-github" data-testid="githubURL"></i>
+                    </a>
+                    <a href="https://twitter.com/iamernesto14">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="dropdown">
+                <div class="nav-links_drop active">
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#work">work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">say hello</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main section -->
+        <main id="main">
+            <section class="hero">
+                <div class="hero_content">
+                    <div class="hero_image">
+                        <img src="./images/ernest_black.png" alt="ernest" data-testid="slackDisplayImage">
+                    </div>
+                    <div class="hero_head">
+                        <h1 data-testid="slackUserName">
+                            Hello, i'm
+                            <span>Ernest.</span>
+                        </h1>
+                        <h4 data-testid="myTrack">
+                            I am a multidisciplinary
+                            <span>Frontend Developer</span>
+                            from Ghana
+                        </h4>
+                        <div class="btn">
+                            <button>visit me</button>
+                            <button>get in touch</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- work section -->
+            <section id="contact">
+                <div class="contact_description reveal">
+                    <h3>get in touch</h3>
+                    <p>I am a web developer who is dedicated to providing high-quality, user-friendly websites and web applications. I am committed to ensuring that you are completely satisfied with your project.</p>
+                    <p>I will personally review your message within 24 hours and provide you with a tailored solution that meets your specific requirements. Thank you for your trust!</p>
+                    <div>
+                        <div class="connect">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Accra, Ghana</span>
+                        </div>
+                        <div class="connect">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>(+233) 245272900</span>
+                        </div>
+                        <div class="connect">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>
+                                <a href="mailto:eernesto211@gmail.com">eernesto211@gmail.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="connect_icons">
+                      <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/iamernesto14">
+                            <i class="fa-brands fa-github" data-testid="githubURL"></i>
+                        </a>
+                        <a href="https://twitter.com/iamernesto14">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- foot section -->
+        <footer>
+            <p>Copyright &copy; 2023 | All right reserved</p>
+            <p>Designed by
+                <span>Ernest Anokye</span>
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
