@@ -55,3 +55,32 @@ function reveal() {
         }
     }
 }
+
+// Define an array of image URLs for the carousel
+const imageUrls = [
+    './images/profile1_lg.jpg',
+    './images/profile2_lg.jpg',
+    './images/profile3_lg.jpg',
+    './images/profile4_lg.jpg',
+    './images/profile5_lg.jpg',
+    './images/profile6_lg.jpg',
+    // Add more image URLs as needed
+  ];
+  
+  const heroSection = document.querySelector('.hero');
+  let currentImageIndex = 0;
+  
+  // Function to update the background image of the hero section
+  function updateHeroBackground() {
+    heroSection.style.backgroundImage = `url(${imageUrls[currentImageIndex]})`;
+  
+    // Increment the image index, and loop back to the first image if necessary
+    currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+  }
+  
+  // Call the updateHeroBackground function initially
+  updateHeroBackground();
+  
+  // Set an interval to change the background image every 5 seconds (5000 milliseconds)
+  setInterval(updateHeroBackground, 7000);
+  
