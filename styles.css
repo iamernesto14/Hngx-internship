@@ -303,11 +303,11 @@ a {
   font-weight: 300;
 }
 
-#about_me_description {
+.about_me_description {
   margin-top: 20px;
 }
 
-#about_me_description p{
+.about_me_description p{
   margin: 10px 0;
 }
 
