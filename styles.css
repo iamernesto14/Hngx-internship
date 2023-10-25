@@ -294,6 +294,272 @@ a {
 }
 /* animation scroll down ends */
 
+/* About me section */
+#about_me_wrapper {
+  background-color: #189fb0ff;
+  padding: 30px;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+}
+
+#about_me_description {
+  margin-top: 20px;
+}
+
+#about_me_description p{
+  margin: 10px 0;
+}
+
+/* work section */
+.work_container {
+  padding: 0 16px;
+}
+
+.work_links_wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_links_wrapper ul{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.work_links li {
+  cursor: pointer;
+  border-right: 2px solid #007bff;
+  text-transform: capitalize;
+  padding: 12px 22px;
+  
+}
+
+.work_links li:hover {
+  background-color: #007bff;
+}
+
+#work_round {
+  border-right: none;
+}
+
+.work_links a {
+  color: #2b2727;
+}
+
+
+.work_wrapper h2 {
+  color: #26265c;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.work_image_wrapper {
+  cursor: pointer;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 7px;
+}
+
+.work_image {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  right: 0;
+  background-color: #25255533;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.card_title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #dac400;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+.work_image:hover .card_body {
+  top: 0;
+}
+
+.card_btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100px;
+  padding: 2px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+.card_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* animation scroll down */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* animation scroll down ends */
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* Text color */
+  padding: 32px 30px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.contact-container {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-container h2 {
+  align-items: flex-start;
+}
+
+.contact_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+/* my-stack section */
+.my_stack {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.my_stack_images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap
+}
+.stack_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.bootstrap {
+  width: 50px;
+}
+
+/* Form */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* Text color */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b1b1b1de;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #fff;
+  color: #189fb0ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #25255533;
+  color: #fff;
+}
+
+/* Additional Contact Information */
+.contact_description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact_description h3 {
+  text-transform: uppercase;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
 
 
 
@@ -310,7 +576,7 @@ a {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  /* padding: 24px; */
   gap: 12px;
 }
 
@@ -410,8 +676,8 @@ nav {
   }
 
   /* contact section */
-  .contact_description {
- padding: 20px 100px;
-  
-}
+  button[type="submit"] {
+    width: 100px;
+  }
+
 }

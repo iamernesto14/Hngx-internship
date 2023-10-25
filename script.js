@@ -84,3 +84,25 @@ const imageUrls = [
   // Set an interval to change the background image every 5 seconds (5000 milliseconds)
   setInterval(updateHeroBackground, 7000);
   
+
+  // Get references to both buttons in the "btn" section
+const visitButton = document.querySelector('.btn button:nth-child(1)');
+const getInTouchButton = document.querySelector('.btn button:nth-child(2)');
+
+// Get a reference to the "contact" section
+const contactSection = document.getElementById('contact');
+const aboutMeSection = document.getElementById('about_me_wrapper');
+
+// Add click event listeners to both buttons
+visitButton.addEventListener('click', () => {
+    // Scroll to the "contact" section when the first button is clicked
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+getInTouchButton.addEventListener('click', () => {
+    // Scroll to the "contact" section when the second button is clicked
+    aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
